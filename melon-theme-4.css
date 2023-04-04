@@ -142,11 +142,11 @@ html {
 /* ----------------------------------------------------------------------------- */
     
     --main-font-family-sans: 'Fira Sans', 'Open Sans', 'Source Sans Pro', 'Liberation Sans', Arial, Sans-serif;
-    --main-font-family-serif: 'Roboto Slab', Georgia, Serif;
+    --main-font-family-serif: 'Fira Sans', 'Open Sans', 'Source Sans Pro', 'Liberation Sans', Arial, Sans-serif;
     --main-font-family-mono: 'Fira Mono', 'Source Code Pro', Courier, Monospace;
     --detail-text-font-family: 'Fira Sans', 'Open Sans', 'Source Sans Pro', 'Liberation Sans', Arial, Sans-serif;
     --font-family-monospace: 'Fira Mono', 'Source Code Pro', Courier, Monospace;
-    --font-headers: 'Roboto Slab', Georgia, Serif;
+    --font-headers: 'Fira Sans', 'Open Sans', 'Source Sans Pro', 'Liberation Sans', Arial, Sans-serif;
     --font-body: 'Fira Sans', 'Open Sans', 'Source Sans Pro', 'Liberation Sans', Arial, Sans-serif;
     --font-code: 'Fira Code', 'Source Code Pro', Courier, Monospace;
 }
@@ -172,7 +172,7 @@ html {
 .modal-content :is(h1, h2, h3, h4, h5, h6) {
   border-bottom: none;
   color: var(--color-gray-light-buttons-text);
-  font-family: var(--detail-text-font-family);
+  font-family: var(--main-font-family-serif);
   margin-top: 1.6rem;
   margin-bottom: .3rem;
   font-weight: bold;
@@ -394,7 +394,7 @@ div#recent-changes-content div ul li {
 
 div#recent-changes-content div ul li span {
   color: var(--color-blue-light);
-  font-family: var(--detail-text-font-family);
+  font-family: var(--main-font-family-serif);
 }
 
 div#recent-changes-content div ul li span small {
@@ -407,7 +407,7 @@ div#recent-changes-content div b {
   border-bottom: 1px solid var(--color-gray);
   color: var(--color-blue-dark);
   display: block;
-  font-family: var(--detail-text-font-family);
+  font-family: var(--main-font-family-serif);
   font-weight: normal;
 }
 
@@ -580,14 +580,6 @@ div#rest-pane div.tab-row-widget div.tab-row-widget-container div.note-tab[activ
     background: var(--gradient-blue-light);
 }
 
-div#rest-pane div.tab-row-widget div.tab-row-widget-container div.note-tab[active] .note-tab-wrapper div.note-tab-title::before {
-  /*! content: "\203B  "; */ /* reference mark */
-  /*! content: "\1F348  "; */ /* melon */
-  content: "\1F34B     "; /* lemon */
-  margin-right: 5px;
-  font-size: .8rem;
-}
-
 
 
 /* ----------- TREE ----------- */
@@ -605,7 +597,7 @@ div#root-widget div#left-pane span.fancytree-node:hover {
 
 div#root-widget div#left-pane .fancytree-node {
 height: 36px; padding: 2px 4px 5px;
-  font-family: var(--detail-text-font-family);
+  font-family: var(--main-font-family-serif);
 }
 
 div#root-widget div#left-pane span.fancytree-node.fancytree-active {
@@ -614,7 +606,7 @@ div#root-widget div#left-pane span.fancytree-node.fancytree-active {
 }
 
 div#root-widget div#left-pane span.fancytree-node.fancytree-node span {
-  font-family: var(--detail-text-font-family);
+  font-family: var(--main-font-family-serif);
 }
 
 div#root-widget div#left-pane span.fancytree-node.fancytree-active span {
@@ -1124,7 +1116,7 @@ div#center-pane div.note-detail div.note-detail-editable-text {
 
 #center-pane .title-row .note-title-widget input.note-title {
     color: var(--color-blue-dark) !important;
-    font-family: var(--detail-text-font-family);
+    font-family: var(--main-font-family-serif);
     font-weight: 600;
     font-size: 2rem;
   /*! box-shadow: none; */
